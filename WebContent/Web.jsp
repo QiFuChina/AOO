@@ -7,14 +7,15 @@
 <title>Web page</title>
 </head>
 <body>
+<form action="${pageContext.request.contextPath}servlet/ie.gmit.sw.UploadHandleServlet" method=post enctype=multipart/form-data>
  <h1>Upload File One</h1>
-    <form method=post enctype=multipart/form-data>
+ 
       <p><input type=file name=fileone>
          <input type=submit value=Upload>
          
  <h1>Upload File Two</h1>
-    <form method=post enctype=multipart/form-data>
       <p><input type=file name=filetwo>
          <input type=submit value=Upload>
+</form>
 </body>
 </html>
